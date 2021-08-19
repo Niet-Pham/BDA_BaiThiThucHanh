@@ -1,0 +1,10 @@
+h1 {
+    text-align: center;
+}
+.container{
+    margin-left: 10%;
+    width: 50%;
+  }
+.input-amount {
+      width: 30%;
+}

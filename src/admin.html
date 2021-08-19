@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Ngân Hàng Số</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <script src="js/call-function.js"></script>
+  </head>
+
+  <body>
+    <h1 style="text-align: center;"><b>Quản trị Ngân Hàng Số</b></h1>
+
+    <div class="container">
+      <div>
+        <button id="btnKetNoi" class="btn btn-warning">
+          Kết nối Metamask
+        </button>
+        <p id="currentAddress">Chưa kết nối</p>
+      </div>
+
+      <form>
+        <div class="form-group">
+          <label for="tokenAddress">Địa chỉ kho tiền</label>
+          <div class="form-inline">
+            <input class="form-control" id="tokenAddress" style="width:70%;" placeholder="Nhập địa chỉ nhận tiền" />
+            
+            <button id="btnThayDoiKhoTien" class="coll btn btn-success">Thay đổi</button>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="amount">Phí dịch vụ</label>
+          <div class="form-inline">
+            <input class="form-control input-amount" id="amount" placeholder="Nhập phí giao dịch (%)"/> %
+            <button id="btnThayDoiPhiDichVu" class="coll btn btn-success">Thay đổi</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
